@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('./gifs.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container p{
+    position: absolute;
+    top: 3rem;
+    font-size: 7rem;
+    color: #00000063;
+}
+.container h2{
+    position: absolute;
+    bottom: 8rem;
+    font-size: 34px;
+}
+.container h5{
+    position: absolute;
+    bottom: 6rem;
+    color: #9c9c9c;
+}
+.container a{
+    position: absolute;
+    bottom: 1rem;
+    background: linear-gradient(45deg, #da48a7, #4b32b0);
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    border-radius: 13px;
+}
