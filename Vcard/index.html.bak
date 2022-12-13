@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="vcard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>V_Card</title>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">
+            <img src="business-woman-cartoon-character-cheerfull-vector-27561644.jpg">
+            <h3>Shadhvi VR</h3>
+            <p>Junior Web Developer</p>
+        </div>
+
+        <div class="body">
+            <ul>
+                <li>
+                    <h3>0123456789</h3>
+                    <p>Mobile number</p>
+                    <i class="fas fa-mobile-alt"></i>
+                </li>
+                <li>
+                    <h3>v.r.shadhvi@gmail.com</h3>
+                    <p>Email address</p>
+                    <i class="fas fa-envelope"></i>
+                </li>
+                <li>
+                    <h3>Brussels, Belgium</h3>
+                    <p>Address</p>
+                    <i class="fas fa-fax"></i>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <ul>
+                <li>
+                    <i class="fab fa-facebook-f"></i>
+                </li>
+                <li>
+                    <i class="fab fa-github"></i>
+                </li>
+                <li>
+                    <i class="fab fa-discord"></i>
+                </li>
+                <li>
+                    <i class="fab fa-linkedin-in"></i>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
