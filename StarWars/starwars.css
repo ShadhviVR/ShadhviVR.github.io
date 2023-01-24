@@ -1,61 +1,126 @@
+@font-face {
+  font-family: NewsGothic;
+  src: url(fonts/NewsGothic.otf);
+}
+
+@font-face {
+  font-family: Univers;
+  src: url(fonts/Univers.otf);
+}
+
 body {
-  margin: 0;
-  padding: 0;
-}
-
-#app {
-  width: 100vw;
-  height: 100vh;
-  font-family: "Libre Franklin", sans-serif;
-  perspective: 240px;
-  perspective-origin: center 15%;
+  background-color: #000;
   overflow: hidden;
+  user-select: none;
 }
 
-.background {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: no-repeat center/cover url("starwars.jpg");
-}
-.fade {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 40vh;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.25),
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 1)
-  );
-  z-index: 10;
+main,
+.core {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.text-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  /*background-color: rgba(255, 255, 255, 0.5);*/
-  transform: rotateX(64deg) scale(0.55, 0.3) translateY(120vh);
-  animation: 80s linear 0s infinite translateText;
+main > div {
+  position: absolute;
 }
+
+.intro {
+  font-family: NewsGothic;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #078389;
+  opacity: 0;
+  animation: intro 5s;
+  max-width: 600px;
+}
+
+.core {
+  background-image: url('./assets/stars.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  animation: core 0s linear 7s forwards;
+}
+
+.logo {
+  position: absolute;
+  animation: logo 12s linear 7s forwards;
+}
+
+.content {
+  color: #c98d06;
+  font-size: 118px;
+  font-family: Univers;
+  width: 930px;
+  opacity: 0;
+  animation: crawl 90s linear 15s forwards, fade 10s linear 80s forwards;
+  transform-origin: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 160px;
+}
+
 .text {
-  font-size: 10vh;
-  color: #face1d;
   text-align: justify;
 }
 
-
-@keyframes translateText {
-  0% {
-    transform: rotateX(64deg) scale(0.55, 0.3) translateY(120vh);
+@keyframes intro {
+  20%,
+  80% {
+    opacity: 1;
   }
+}
+
+@keyframes core {
+  from,
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(100%);
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
   100% {
-    transform: rotateX(64deg) scale(0.55, 0.3) translateY(-400vh);
+    opacity: 0;
+    transform: scale(0%);
+  }
+}
+
+@keyframes crawl {
+  0% {
+    transform: perspective(75vmax) rotateX(75deg) translateY(2000px) translateZ(-200px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(75vmax) rotateX(75deg) translateY(-3000px) translateZ(-200px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
