@@ -9,4 +9,4 @@
 - [Restaurant Website](https://shadhvivr.github.io/resto_NT.github.io/)
 - [Hangman Game](https://shadhvivr.github.io/Hangman/)
 - [Login Page](https://shadhvivr.github.io/LoginPageCookieClicker/)
-- [Cookie-Clicker Game](https://liolle.github.io/CookieClicker/)
+- *Group Project:* [Cookie-Clicker Game](https://liolle.github.io/CookieClicker/)
